@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
 <meta name="theme-color" content="#ff6b9d" />
-<title>测测你和你担的CP日常</title>
+<title>测测你和你担的肌肤饥渴</title>
 <style>
   :root {
     --ink: #3b2c42;
@@ -82,7 +82,7 @@
     margin-bottom: 14px; font-weight: 600;
   }
   .hero h1 {
-    font-size: 28px; line-height: 1.4; font-weight: 800; letter-spacing: 1px;
+    font-size: 27px; line-height: 1.4; font-weight: 800; letter-spacing: 1px;
   }
   .hero h1 .hl {
     background: linear-gradient(120deg, var(--pink), var(--violet));
@@ -177,10 +177,10 @@
     font-size: 12px; letter-spacing: 4px; color: var(--violet); margin-bottom: 8px; font-weight: 600;
   }
   .result .r-name {
-    font-size: 28px; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px; line-height: 1.35;
+    font-size: 27px; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px; line-height: 1.35;
   }
   .result .r-tag {
-    display: inline-block; font-size: 13px; color: var(--pink-deep); font-weight: 700;
+    display: inline-block; font-size: 13.5px; color: var(--pink-deep); font-weight: 700;
     margin-bottom: 18px; letter-spacing: 1px;
   }
 
@@ -201,7 +201,7 @@
   }
   .poster > * { position: relative; z-index: 2; }
   .poster .p-emoji { font-size: 42px; margin-bottom: 10px; }
-  .poster .p-title { font-size: 32px; font-weight: 800; letter-spacing: 2px; margin-bottom: 6px; }
+  .poster .p-title { font-size: 28px; font-weight: 800; letter-spacing: 2px; margin-bottom: 6px; line-height: 1.3; }
   .poster .p-tag { font-size: 14px; letter-spacing: 1px; opacity: .95; margin-bottom: 16px; }
   .poster .p-line { width: 44px; height: 2px; margin: 0 auto 16px; background: rgba(255,255,255,.6); }
   .poster .p-kw { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; margin-bottom: 16px; }
@@ -233,7 +233,7 @@
     background: #fff; border: 1px solid rgba(180,140,200,.18);
     border-radius: 14px; padding: 13px 15px; margin-bottom: 10px;
   }
-  .others .ot-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .others .ot-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
   .others .ot-emoji { font-size: 20px; }
   .others .ot-name { font-size: 15px; font-weight: 800; color: var(--ink); letter-spacing: .5px; }
   .others .ot-tag { font-size: 12px; color: var(--pink-deep); margin-left: auto; font-weight: 600; white-space: nowrap; }
@@ -287,16 +287,16 @@
 </head>
 <body>
   <div class="stage">
-    <div class="badge-float">💕 嫂子视角</div>
+    <div class="badge-float">💕 肌肤饥渴</div>
 
     <!-- 标题页 -->
     <div class="card" id="screen-start">
       <div class="hero">
-        <div class="kicker">— 未来你变成嫂子 —</div>
-        <h1>测测你和你担的<br><span class="hl">CP 日常</span>是什么样的</h1>
-        <div class="emoji-row">🔥 💍 🍵 🧊</div>
+        <div class="kicker">— 肌肤饥渴 · 黏法小测 —</div>
+        <h1>测测你和你担的<br><span class="hl">肌肤饥渴</span>是哪一款</h1>
+        <div class="emoji-row">🐱 🐨 🐺 🦔</div>
         <div class="divider"><span class="heart">💗</span></div>
-        <p class="sub">八道题，代入那个和他在一起的人<br>看看你俩会是哪一种画风</p>
+        <p class="sub">八道题，代入那个和他在一起的人<br>看看你俩黏的是荷尔蒙、体温、主权，还是疼痛</p>
         <button class="btn" id="btn-start">开始测试</button>
         <div class="tips">纯属娱乐 · 别太当真（嗑到了就行）</div>
       </div>
@@ -317,24 +317,24 @@
     <!-- 结果页 -->
     <div class="card hidden" id="screen-result">
       <div class="result">
-        <div class="r-kicker" id="r-kicker">你的 CP 日常画风</div>
+        <div class="r-kicker" id="r-kicker">你的肌肤饥渴型</div>
         <div class="r-name" id="r-name"></div>
         <div class="r-tag" id="r-tag"></div>
         <div class="poster" id="poster"></div>
 
         <div class="r-detail">
-          <div class="k">— CP 详说 —</div>
+          <div class="k">— 你们的黏法详说 —</div>
           <div class="t" id="r-detail"></div>
         </div>
 
         <div class="review">
-          <div class="k">— 你的心动取向分析 —</div>
+          <div class="k">— 你的肌肤饥渴取向分析 —</div>
           <div class="rv-synth" id="rv-synth"></div>
           <div class="review-list" id="review-list"></div>
         </div>
 
         <div class="others">
-          <div class="k">— 其他 CP 类型 —</div>
+          <div class="k">— 其他肌肤饥渴类型 —</div>
           <div class="ot-list" id="ot-list"></div>
         </div>
 
@@ -352,126 +352,126 @@
 
 <script>
 /* ============ 数据 ============ */
-var IDS = ["henhai", "xianhun", "xishui", "gaoleng"];
+var IDS = ["zhiqiu", "xineng", "badao", "gongdan"];
 
 var RESULTS = {
-  "henhai": {
-    name: "恨海情天 · 破镜重圆",
-    tag: "张婧仪女主剧本 · 大女主虐恋",
-    emoji: "🔥",
-    c1: "#c0395a", c2: "#ff8a9e",
-    kw: ["恨海情天", "轰轰烈烈", "欢喜冤家", "虐", "破镜重圆"],
-    text: "你俩是「天雷勾地火」那一挂——爱的时候轰轰烈烈，吵的时候天崩地裂，中间逃不过一场误会和分开，可宿命是根扯不断的红线，绕一大圈，最后还是破镜重圆。",
-    detail: "你和他，注定是那种「粉丝看了都要掐人中」的虐恋型 CP。甜的时候是血糖，虐的时候是断头饭，你俩的爱情永远在「上头—下头—又上头」之间极限拉扯。旁人看不懂你们为什么要吵得天翻地覆、又要死要活地复合，只有你们自己清楚——那种撕破脸过、分过手、绕一大圈还是非你不可的宿命感，才最要命。你们的故事要是拍成剧，就是张婧仪式的女主剧本：恨海情天，轰轰烈烈，欢喜冤家，中间虐得人肝疼，但结局必须是 HE。因为老天爷都拆不散一对冤家。"
+  "zhiqiu": {
+    name: "动物本能 · 纯欲直球派",
+    tag: "馋你身子 · 荷尔蒙永动机",
+    emoji: "🐱",
+    c1: "#e0556b", c2: "#ff8ba0",
+    kw: ["生理性吸引", "直球", "叠叠乐", "亲亲怪", "性张力"],
+    text: "你俩的爱，甜在荷尔蒙里。接吻像呼吸一样随便，沙发上躺躺就变「叠叠乐」，睡觉必须肉贴肉——你比他还熟悉自己哪块怕痒。",
+    detail: "你俩的感情，是标准的「动物本能」。不玩欲擒故纵那套——出门前亲、进门后亲、做饭时从背后亲脖子、打游戏暂停也要扭头亲一下。在家基本处于「半裸奔」状态，穿彼此的衣服当家居服；沙发上躺躺就变成「叠叠乐」，一个人趴另一个人身上刷手机，谁也不嫌重；晚上哪怕热出一身汗也要扒着睡，推开五分钟又粘回来。你们的亲密感来自「我对你的身体比我自己还熟」——知道他哪个地方怕痒、呼吸变重代表什么。他洗完澡出来头发滴水，你直接拽过来用毛巾搓，搓着搓着就笑成一团。连操心都特别「肉欲」：督促他健身，因为「你腰窝练出来我更喜欢」。人前想亲不能亲时，就从背后走过去，手心贴一下他后颈——「先存着，回家还。」"
   },
-  "xianhun": {
-    name: "先婚后爱 · 假戏真做",
-    tag: "契约情侣 · 日久生情",
-    emoji: "💍",
-    c1: "#a9743e", c2: "#e0a96a",
-    kw: ["先婚后爱", "合约情侣", "假戏真做", "慢火熬糖", "日久生情"],
-    text: "你俩的故事，是从「各取所需」开始的——因为合作、撮合或一纸契约被绑在一起，表面客气疏离，却在同吃同住的日常里，一点点把假的演成了真的。",
-    detail: "你和他，是标准的「先婚后爱」剧本。一开始谁都没当真——可能是合作炒 CP、可能是闪婚、也可能是被家里人硬凑到一块，你俩客客气气、保持距离，连微信都带着「你好、请多关照」的官方语气。可人是会日久生情的动物：他记得你的忌口，你习惯了他的呼吸声，假糖慢慢熬成了真糖。等到真要「解约」那天，两个人才慌得不行，才发现早就非彼此不可。你们的心动是慢火熬出来的，前期淡得像白开水，后期甜得犯规。这种「我明明只是走个流程，怎么走着走着就动心了」的笨拙，最戳人。"
+  "xineng": {
+    name: "静默寄生 · 无声吸能派",
+    tag: "人形充电宝 · 贴贴就续命",
+    emoji: "🐨",
+    c1: "#2f8f86", c2: "#6fc6bd",
+    kw: ["各干各的", "脚叠着", "充电", "不索取", "老夫老妻"],
+    text: "你俩的爱，安静得像充上了电。各干各的，脚在被子底下叠着；不索取、不热烈，但只要贴着，你就有能量把这一天过下去。",
+    detail: "你俩的感情，是标准的「静默寄生」。家里很安静，但两个人永远在半径一米之内——一个看纸质书，一个打游戏，脚必须叠在一起；沙发上各歪一头，脚在中间交叉。最经典的画面：一个人在赶工，另一个人默默把椅子滑到旁边，脑袋靠上大腿，不说话、玩手机，偶尔把屏幕歪过去给对方看个好笑的东西，对方瞥一眼笑一下，继续干活。没有热烈的亲吻，但早上醒来迷迷糊糊时，一个人会把脸埋进另一个人后颈的头发里，深深吸一口气再继续睡。你们的亲密不是「我要你」，是「你在这里，我就有能量」。操心全在无缝衔接的细节里：浴巾永远搭在门把手上，水杯空了总有人倒满。最暧昧的暗号是「后脑勺蹭肩窝」——谁先把后脑勺塞进对方的锁骨窝，谁就是今晚先说「我爱你」的那个。"
   },
-  "xishui": {
-    name: "细水长流 · 顺滑轻盈",
-    tag: "细糠文学 · 稳稳的幸福",
-    emoji: "🍵",
-    c1: "#3f9a74", c2: "#8fd3ad",
-    kw: ["很顺很轻盈", "细糠", "双向奔赴", "直球", "纯爱"],
-    text: "你俩的爱情没有狗血、没有虐，从认识到相爱一路顺滑。暧昧期短而甜，告白水到渠成，别人嗑你俩的糖都得细品——是那种「细糠」，越品越上头。",
-    detail: "你和他，是全网都想要的那种「顺滑爱情」。没有轰轰烈烈，也没有爱而不得，你俩从认识起就特别合拍——聊得来、处得来、连吃饭口味都撞得上。暧昧期短得让人直呼「还没嗑够就官宣了」，告白也自然得像「要不等会儿一起去吃个宵夜」。你们发糖的方式很轻：一个眼神、一句直球、一次不经意的牵手，甜但不齁。别人嗑你们得用「细糠」模式，慢慢品才能尝出那点化不开的甜。这样的日子，像白开水兑了蜂蜜，平平淡淡，却怎么都离不开了。"
+  "badao": {
+    name: "盖章宣示 · 霸道占有派",
+    tag: "霸道总裁爱上我 · 盖章cp",
+    emoji: "🐺",
+    c1: "#5b3f9e", c2: "#9a7fd6",
+    kw: ["宣示主权", "盖章", "十指紧扣", "圈养", "我的"],
+    text: "你俩的爱，靠「你是我的」反复确认。走路十指扣紧，人前宣示主权，睡前一道工序从背后圈住——「嗯，今天也是我的。」",
+    detail: "你俩的感情，是标准的「盖章宣示」。走路不是牵手，是十指交叉扣紧，拇指还在对方手背上反复摩挲。人前的小动作极多：说话时手搭后腰、下巴压在对方肩胛骨上、对方跟别人说话时从背后捏一下后颈；合照一定有一张从背后环抱、下巴搁头顶，眼神看镜头——「看见没，我的。」你们的亲密靠「用肢体说所有权」：每天睡前有一道固定工序，从背后搂住、收紧手臂、下巴搁进肩窝、深呼吸一次，说一句「嗯，今天也是我的。」操心全在掌控感上：手机密码必须知道（不是查岗，是「我应该知道」）；衣服穿少了，追出去把人拽回来套外套。最暧昧的暗号是「掐虎口」——人前想宣示又不好意思，走过去捏一下虎口，用力、停两秒、松开，意思是「我在看着你」。"
   },
-  "gaoleng": {
-    name: "高冷顶流 × 他的小狗",
-    tag: "禁欲系 × 忠犬 · 内外反差",
-    emoji: "🧊",
-    c1: "#4a5b9e", c2: "#8b86d6",
-    kw: ["高冷", "禁欲系", "忠犬小狗", "双标", "只对你例外"],
-    text: "他在外人面前是高冷禁欲的顶流，话少、脸冷、生人勿近；只有回到你面前，才变回那个会吃醋、会撒娇、会黏人的「小狗」。全世界都以为他难搞，只有你知道他有多软。",
-    detail: "你和他，是标准的内外反差 CP。镜头前的他，高冷、禁欲、惜字如金，是那种「生人勿近」的天才或顶流，谁都撬不动他的表情管理。可只有你知道，回了家他就是只黏人的小狗：会因为你多看了别的爱豆一眼而吃醋，会窝在你怀里撒娇，会嘴硬心软地把最好的都留给你。这种「全世界都觉得你们不可能，偏偏他为你卸下所有伪装」的双标，最让人上头。你们的糖，甜在反差上——别人眼里的冰山，是你一个人的太阳。"
+  "gongdan": {
+    name: "病友相护 · 疼痛共担派",
+    tag: "互为人形止痛药 · 共担cp",
+    emoji: "🦔",
+    c1: "#4a6b8a", c2: "#8aa5bd",
+    kw: ["雪中送炭", "物理止痛", "拍背", "握小指", "共担"],
+    text: "你俩的爱，是「疼的时候更要贴」。不做锦上添花，只做雪中送炭——你疼的时候，他的手心比止痛药管用。",
+    detail: "你俩的感情，是标准的「病友相护」。你们未必是永远开心的人，甚至可能都带点丧、带点焦虑、带点睡眠问题——但正因如此，才最懂彼此的疼。半夜谁做噩梦惊醒，另一个人秒醒，不说话，把人揽过来，掌心贴住后背慢速地拍，像哄小孩，拍到呼吸平稳；压力大头痛，就帮对方按太阳穴，按着按着对方睡着了，按的人手酸了也没停。你们的亲密是「雪中送炭」的黏：难过时不安慰、不分析、不「别哭了」，只把对方整个人按进胸口，按到哭完；疼的时候，把掌心贴在疼的地方，用体温捂热，物理止痛。操心全在「健康监测」上：记得对方所有药、上次崩溃的原因、几点睡几点醒才算正常。最暧昧的暗号是「握小指」——人多、心情不好又不想被看出来时，小指勾住对方小指晃一晃：「我在，撑不住靠我。」"
   }
 };
 
 var QUESTIONS = [
   {
-    scene: "他刚结束一个长达三个月的档期（杀青 / 巡演 / 闭关训练），你俩终于能喘口气。",
-    q: "这天晚上，你俩会怎么过？",
+    scene: "回到你俩的第一次见面——不是什么偶像剧，而是某个再普通不过、甚至有点狼狈的偶遇。",
+    q: "哪个初识的「真实打开方式」，最像你们？",
     opts: [
-      { t: "攒了一肚子话要倒，拉着他复盘这三个月——谁又上热搜了、哪个对家又作妖了，你俩能从天黑聊到天亮。", w: { "henhai": 3 } },
-      { t: "其实还没到能放松的关系——你俩是「合作绑定」。他礼貌问你要不要吃顿杀青饭，你公事公办地答应了，点菜时却发现他记得你所有忌口。", w: { "xianhun": 3 } },
-      { t: "就安安静静待在一起，他窝沙发刷手机，你靠在他肩上，有一搭没一搭地说话，不用找话题也很舒服。", w: { "xishui": 3 } },
-      { t: "你嘴上说着「大明星辛苦了」，手上已经给他点了爱吃的，还顺手把空调调到他喜欢的温度——其实他早回温到只对你一个人软。", w: { "gaoleng": 3 } }
+      { t: "在机场安检，你俩的行李撞到一起，他弯腰帮你捡东西，你抬头对上他的眼睛，脑子里只剩一句「这人怎么这么好看」，然后没出息地先笑了。", w: { "zhiqiu": 3 } },
+      { t: "深夜便利店，你俩同时伸手去拿最后一盒牛奶，指尖碰到，他往后退半步让给你，你俩就这么并排站在微波炉前等饭，一句话没说，却一点也不尴尬。", w: { "xineng": 3 } },
+      { t: "电梯里，他按了你的楼层又按了自己的，到你的楼层时先一步挡住门，下巴朝外一扬「你先」，眼神却把你从头到脚扫了一遍，像在标记。", w: { "badao": 3 } },
+      { t: "药房门口，你俩都因为各自的「老毛病」在买药，他看你拎着一袋药，犹豫了一下开口：「这个牌子的胃药其实不太管用，你试过别的吗。」", w: { "gongdan": 3 } }
     ]
   },
   {
-    scene: "回想到你俩的第一次见面，那个场景很「普通」，没有偶像剧滤镜。",
-    q: "最接近哪一种初遇？",
+    scene: "先不急着代入他。做一次「亲密体质」自查。",
+    q: "下面哪种瞬间，最能让你「浑身一激灵」（被击中的那种）？",
     opts: [
-      { t: "加微信时他半天憋不出一句完整话，你鼓起勇气发了个「hi」，他过了很久才回一个字，你心里吐槽「这也太高冷了吧」，却莫名想再逗他一下。", w: { "gaoleng": 3 } },
-      { t: "一起弯腰去捡掉在地上的东西（一张票根 / 一枚打火机 / 散落的手稿），指尖碰到一起，你俩都愣住，空气像有电流，又不约而同别过脸。", w: { "henhai": 3 } },
-      { t: "因为某件事被迫「组队」——合作、相亲、家族饭局、被撮合，加了微信后开头两句客气得不行：「你好」「请多关照」，谁也没想到后来会走到一起。", w: { "xianhun": 3 } },
-      { t: "加微信是顺理成章的——可能在一个共同朋友的局上，聊到某个话题特别投缘，散场后他自然地说「加个微信吧，改天一起」，没有一丝刻意。", w: { "xishui": 3 } }
+      { t: "他在人前很自然地揽住你的腰、或把下巴搁在你头顶，别人一眼就看出「你是他的」，你不但不排斥，反而挺受用。", w: { "badao": 3 } },
+      { t: "对方刚洗完澡出来，头发还滴着水，你第一反应不是去拿毛巾，是觉得「这个人现在好看得犯规」，喉咙先干了一下。", w: { "zhiqiu": 3 } },
+      { t: "你难受的时候他什么都不问，只是把手贴在你疼的地方、或把你整个人按进怀里，那一刻你觉得「疼都值了」。", w: { "gongdan": 3 } },
+      { t: "两个人各干各的，脚在被子底下叠在一起，谁都没说话，你却突然觉得「此刻就是全世界最好的时刻」。", w: { "xineng": 3 } }
     ]
   },
   {
-    scene: "恋爱后，你俩也免不了有闹别扭的时候。",
-    q: "你们「吵架」（闹别扭）更像哪种画风？",
+    scene: "他正在赶夜戏 / 录音 / 直播到深夜，你去探班，在镜头外等他。",
+    q: "这背后的一小段休息时间，你俩是什么状态？",
     opts: [
-      { t: "基本不吵，因为一开始就「说好了各取所需、不动真感情」——可真到要分开的时候，两个人都慌得不行，才发现早就假戏真做了。", w: { "xianhun": 3 } },
-      { t: "大吵一架，摔门而出，彼此拉黑三天，又都忍不住偷偷看对方动态，最后在某个深夜一个电话过去，对着电话又哭又笑，和好得比谁都快。", w: { "henhai": 3 } },
-      { t: "很少真生气，有点小别扭也是你退一步我哄一下，五分钟内又黏到一起，从没让情绪过夜。", w: { "xishui": 3 } },
-      { t: "外人看来他从不低头，只有你知道，每次闹别扭都是他别扭着别扭着又默默把好吃的递过来、把被子分你一半，用行动道歉，嘴硬得要命。", w: { "gaoleng": 3 } }
+      { t: "你就安静地坐在监视器 / 调音台旁边，他休息时走过来也不说话，直接靠在你身上眯五分钟充个电，然后起身继续开工。", w: { "xineng": 3 } },
+      { t: "有工作人员跟你搭话，他隔着人群一个眼神飘过来，你还没反应，他已经走过来把你往身后一揽，客气地替你把话接了过去。", w: { "badao": 3 } },
+      { t: "他在休息间隙溜到你身边，妆还没卸，你先上去亲一口，把他口红都蹭花了，他嘴上说「别闹，一会上镜」，手却已经回搂住你。", w: { "zhiqiu": 3 } },
+      { t: "他连轴转累到偏头痛发作，你早备好了药和眼罩，把他按在休息室沙发上帮他按太阳穴，按到他睡着，你才轻轻松手。", w: { "gongdan": 3 } }
     ]
   },
   {
-    scene: "来做个「心动取向」的精准定位——以下哪种信号，最容易一击命中你？",
-    q: "你最吃哪一种心动瞬间？",
-    opts: [
-      { t: "被那种「命里注定逃不掉」的宿命感击中——明明撕破脸过、明明分过手，兜兜转转还是他，这种「扯不断的红线」最要命。", w: { "henhai": 3 } },
-      { t: "被那种「克制、藏在细节里的心动」击中——他什么都没明说，却记得你的生理期、忌口和随口提过的小事，越品越甜。", w: { "xianhun": 3 } },
-      { t: "被那种「没有技巧、全是真心」的直球击中——他说「我喜欢你」说得认真又笨拙，没有套路，你心一软就答应了。", w: { "xishui": 3 } },
-      { t: "被那种「只对你一个人例外」的双标击中——他对外人冷得像块冰，唯独对你低头、吃醋、撒娇，这种反差最让人上头。", w: { "gaoleng": 3 } }
-    ]
-  },
-  {
-    scene: "周末你们一起宅在家，各忙各的，又共享同一片空气。",
+    scene: "难得的休息日，你们宅在家，谁也不想出门。",
     q: "最常出现的画面是？",
     opts: [
-      { t: "一个做饭一个洗碗，一个打游戏一个刷剧，偶尔对视一眼就笑，谁都不用刻意找话题。", w: { "xishui": 3 } },
-      { t: "上一秒还在为一点小事斗嘴（「你凭什么动我遥控器」），下一秒又挤在一起看同一部剧，你俩的相处永远在「吵」和「甜」之间极限拉扯。", w: { "henhai": 3 } },
-      { t: "一起研究怎么把这段「契约关系」演得像真的——一起做饭、一起应付亲戚朋友的盘问，结果演着演着，两个人都入戏了。", w: { "xianhun": 3 } },
-      { t: "你窝在沙发刷他的物料、剪他的视频，他凑过来吃醋「你盯着屏幕比盯我还久」，一把抢走你手机，让你「看看真人」。", w: { "gaoleng": 3 } }
+      { t: "你生理期 / 头痛，他把你按回床上，掌心贴住你小腹 / 太阳穴物理止痛，还一边嘴上嫌弃「让你别喝冰的你非不听」。", w: { "gongdan": 3 } },
+      { t: "一个看剧一个打游戏，各歪沙发一头，脚在中间交叉，偶尔把屏幕歪过去给对方看一眼，笑一下，继续各干各的。", w: { "xineng": 3 } },
+      { t: "你换衣服下楼倒个垃圾，他非要跟着，还要十指紧扣，说「你一个人我不放心」——其实楼下就五米。", w: { "badao": 3 } },
+      { t: "你俩基本处于「叠叠乐」状态——他躺沙发你趴他背上，各刷各的手机，谁也不嫌重，刷着刷着就扭头亲一下。", w: { "zhiqiu": 3 } }
     ]
   },
   {
-    scene: "在朋友、家人面前，你俩是哪种相处画风？",
-    q: "别人眼中的你们，像什么？",
+    scene: "你俩闹别扭了（或者你心情很差）。",
+    q: "哪种方式最能让你们和好 / 让你缓过来？",
     opts: [
-      { t: "藏都藏不住——朋友一眼就看出你俩「爱得死去活来」，因为你们随时可能为对方的一句话上头、下头、又上头，情绪全写在脸上。", w: { "henhai": 3 } },
-      { t: "一开始「装不熟」——在别人面前客客气气保持距离，背地里其实已经同居很久了，只有最熟的人知道真相。", w: { "xianhun": 3 } },
-      { t: "大大方方——牵手、互相夹菜、自然的肢体接触，甜得朋友直呼「磕拉了」，你俩反而觉得「这有什么，我们一直这样」。", w: { "xishui": 3 } },
-      { t: "两极反转——他（或你）在外是高冷大魔王，回了家变成黏人精，朋友根本想象不到私底下的样子，直呼「这不科学」。", w: { "gaoleng": 3 } }
+      { t: "一个拥抱就能解决——他直接把你拽进怀里，你挣扎两下就软了，身体比嘴诚实，气消得比谁都快。", w: { "zhiqiu": 3 } },
+      { t: "他先示弱地说一句「行了，算我的错」，然后把你整个人圈进怀里，下巴搁你头顶，说「气完了吗，气完跟我回家」。", w: { "badao": 3 } },
+      { t: "你还没开口，他就把热水递到你嘴边、把毯子给你盖好，再把耳朵凑过去：「说吧，我听着，手给你捏着。」", w: { "gongdan": 3 } },
+      { t: "他不说话，只是把你揽过来，掌心贴着你后背慢慢拍，或者你俩就这么安静地并排坐着，等情绪自己流过去。", w: { "xineng": 3 } }
     ]
   },
   {
-    scene: "总要有人先捅破那层窗户纸。",
-    q: "你俩「确定关系」的那个瞬间，更接近哪一种？",
+    scene: "在朋友聚会、公开活动这种人多的场合。",
+    q: "你俩的相处更像哪种？",
     opts: [
-      { t: "在他（或你）终于绷不住的那一刻——高冷的那个人卸下所有伪装，认真又笨拙地表白，耳朵红到耳根，你才知道这份温柔只留给你一个人。", w: { "gaoleng": 3 } },
-      { t: "在最激烈的时候爆发——可能是一次大吵之后，他突然把你拽回来，红着眼说「你敢走试试」，你也不甘示弱吼回去，吼着吼着就亲到了一起。", w: { "henhai": 3 } },
-      { t: "在「不得不」的推动下——可能是家里催、合同到期、或者一场误会，你俩被迫直面「到底算什么关系」，才终于坦白早就动了心。", w: { "xianhun": 3 } },
-      { t: "在某个特别普通的时刻——一起等公交、一起吃宵夜、或者你随口说「要不我们在一起吧」，他抬头笑着说「好啊」，没有仪式感，却甜到不行。", w: { "xishui": 3 } }
+      { t: "你们不怎么秀，但永远在彼此的视线范围里，偶尔碰一下手肘、递个东西，外人觉得你们「老夫老妻」，只有你们知道那种安静里的舒服。", w: { "xineng": 3 } },
+      { t: "藏不住也不想藏——你俩的肢体接触自然到有点旁若无人，朋友起哄「你们收敛点」，你俩还一脸无辜。", w: { "zhiqiu": 3 } },
+      { t: "你俩都是那种会暗暗照顾对方的人，一个眼神就知道对方是不是累了、想走了，然后默契地一起提前离场。", w: { "gongdan": 3 } },
+      { t: "他会宣示主权——手搭你后腰、合照从背后环住你、你跟他说话时他拇指还在你手背上摩挲，明摆着「我的」。", w: { "badao": 3 } }
     ]
   },
   {
-    scene: "最后，给你俩的故事起一个「基调」。",
-    q: "你希望（或你俩本来就是）哪一种？",
+    scene: "人前不方便，但你俩有些只有彼此懂的「暗号」。",
+    q: "哪个最像你们？",
     opts: [
-      { t: "一本翻到最后会哭、但结局是 HE 的小说——轰轰烈烈，恨海情天，破镜重圆，狗血但上头。", w: { "henhai": 3 } },
-      { t: "一纸先婚后爱、假戏真做的契约——从各取所需到非你不可，糖是慢慢熬出来的。", w: { "xianhun": 3 } },
-      { t: "一段没什么波折、却怎么也离不开的感情——细水长流，稳稳的幸福，像白开水兑了蜂蜜。", w: { "xishui": 3 } },
-      { t: "一场「全世界都觉得你们不可能，偏偏你们最合拍」的反差故事——高冷为你融化，忠犬被你驯服。", w: { "gaoleng": 3 } }
+      { t: "掐虎口——人前想宣示又不好意思，走过去捏一下对方虎口，用力、停两秒、松开，意思是「我在看着你」。", w: { "badao": 3 } },
+      { t: "握小指——人多、心情不好又不想被看出来时，小指勾住对方小指晃一晃，意思是「我在，撑不住靠我」。", w: { "gongdan": 3 } },
+      { t: "摸后颈——想亲不能亲的时候，从背后走过去，手心贴一下对方后颈，意思是「先存着，回家还」。", w: { "zhiqiu": 3 } },
+      { t: "后脑勺蹭肩窝——睡前谁先把后脑勺塞进对方锁骨窝里，谁就是今晚先说「我爱你」的那个。", w: { "xineng": 3 } }
+    ]
+  },
+  {
+    scene: "深夜，凌晨三点，整座城市都睡了。",
+    q: "你俩在干嘛？",
+    opts: [
+      { t: "谁要是做噩梦醒了，另一个就秒醒，掌心贴背慢慢地拍，像哄小孩，拍到呼吸平稳再继续睡。", w: { "gongdan": 3 } },
+      { t: "他迷迷糊糊伸手把你往怀里一捞，收紧手臂，嘟囔一句「我的」，又睡死过去。", w: { "badao": 3 } },
+      { t: "一个人醒了，另一个人迷迷糊糊也醒了，然后把脸埋进对方后颈的头发里，深深吸一口气，继续睡。", w: { "xineng": 3 } },
+      { t: "本来各刷各的手机，刷着刷着两个人就贴到一块儿去了，凌晨三点还在「交流」，谁也没想起来要睡觉。", w: { "zhiqiu": 3 } }
     ]
   }
 ];
@@ -544,7 +544,7 @@ function renderQuestion(){
 function pick(el, o){
   if (el.classList.contains("pick")) return;
   el.classList.add("pick");
-  answers[cur] = { q: QUESTIONS[cur].q, scene: QUESTIONS[cur].scene, opt: o };
+  answers[cur] = { q: QUESTIONS[cur].q, opt: o };
   setTimeout(function(){
     if (cur < QUESTIONS.length - 1){ cur++; renderQuestion(); }
     else { finish(); }
@@ -572,7 +572,7 @@ function finish(){
   var r = computeResultInner();
   currentResult = r;
   $("r-name").textContent = r.name;
-  $("r-tag").textContent = "🎬 " + r.tag;
+  $("r-tag").textContent = r.tag;
   $("r-detail").textContent = r.detail;
   renderPosterHTML(r);
   renderReview();
@@ -594,16 +594,15 @@ function renderPosterHTML(r){
     '<div class="p-line"></div>' +
     '<div class="p-kw">' + kwHtml + '</div>' +
     '<div class="p-text">' + r.text + '</div>' +
-    '<div class="p-foot">未来你变成嫂子 · 你和你担的 CP 日常</div>';
+    '<div class="p-foot">未来你变成嫂子 · 你俩的肌肤饥渴</div>';
 }
 
-/* ============ 心动取向分析 + 回顾 ============ */
+/* ============ 肌肤饥渴取向分析 + 回顾 ============ */
 function renderReview(){
   var synth = $("rv-synth");
   var list = $("review-list");
   list.innerHTML = "";
 
-  // 统计每道题选的是哪一类
   var dist = {};
   answers.forEach(function(a){
     if (!a) return;
@@ -619,11 +618,11 @@ function renderReview(){
 
   var body;
   if (RESULTS[top] === currentResult){
-    body = '你的心动取向很一致——8 道题里大多都指向「' + myName + '」这一挂，从初遇到相处都顺得很彻底，不是随便测出来的。';
+    body = '你的「肌肤饥渴」取向很一致——8 道题里大多都指向「' + myName + '」这一挂，从初识到相处黏得很彻底，不是随便测出来的。';
   } else {
-    body = '你的选择有散有聚，但总体上最贴近「' + topName + '」，最后却收束成了「' + myName + '」——说明你在心动这件事上，藏着自己都未必察觉的一面。';
+    body = '你的选择有散有聚，但总体上最贴近「' + topName + '」，最后却收束成了「' + myName + '」——说明你在「黏」这件事上，藏着自己都未必察觉的一面。';
   }
-  synth.innerHTML = '<b>【心动取向】</b>' + body;
+  synth.innerHTML = '<b>【肌肤饥渴取向】</b>' + body;
 
   answers.forEach(function(a, i){
     if (!a) return;
@@ -696,21 +695,18 @@ function buildPoster(r){
   c.width = W; c.height = H;
   var ctx = c.getContext("2d");
 
-  // 背景
   var bg = ctx.createLinearGradient(0, 0, W, H);
   bg.addColorStop(0, r.c1);
   bg.addColorStop(1, r.c2);
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, W, H);
 
-  // 光晕
   var glow = ctx.createRadialGradient(W*0.82, 100, 20, W*0.82, 100, 280);
   glow.addColorStop(0, "rgba(255,255,255,.32)");
   glow.addColorStop(1, "rgba(255,255,255,0)");
   ctx.fillStyle = glow;
   ctx.fillRect(0, 0, W, H);
 
-  // 内框
   ctx.strokeStyle = "rgba(255,255,255,.42)";
   ctx.lineWidth = 3;
   roundRect(ctx, 36, 36, W-72, H-72, 28);
@@ -723,34 +719,30 @@ function buildPoster(r){
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
 
-  // emoji
   ctx.font = "120px " + FONT;
   ctx.fillText(r.emoji, W/2, 240);
 
-  // 名称
   ctx.fillStyle = "#ffffff";
-  ctx.font = "800 88px " + FONT;
+  ctx.font = "800 76px " + FONT;
   ctx.shadowColor = "rgba(0,0,0,.25)";
   ctx.shadowBlur = 14;
-  ctx.fillText(r.name, W/2, 400);
+  var nameLines = wrapText(ctx, r.name, W-220);
+  var nameLh = 104, nameY = 380 - (nameLines.length-1)*nameLh/2;
+  nameLines.forEach(function(ln, i){ ctx.fillText(ln, W/2, nameY + i*nameLh); });
   ctx.shadowBlur = 0;
 
-  // tag
   ctx.fillStyle = "rgba(255,255,255,.95)";
   ctx.font = "40px " + FONT;
-  ctx.fillText(r.tag, W/2, 486);
+  ctx.fillText(r.tag, W/2, 470);
 
-  // 分隔线
   ctx.strokeStyle = "rgba(255,255,255,.6)";
   ctx.lineWidth = 3;
   ctx.beginPath();
-  ctx.moveTo(W/2-60, 550); ctx.lineTo(W/2+60, 550);
+  ctx.moveTo(W/2-60, 540); ctx.lineTo(W/2+60, 540);
   ctx.stroke();
 
-  // 关键词 chips
   var kw = r.kw;
-  var gap = 18, chipH = 58, padX = 30, startY = 600;
-  var totalW = 0;
+  var gap = 18, chipH = 58, padX = 30, startY = 590;
   ctx.font = "32px " + FONT;
   var widths = kw.map(function(k){ return ctx.measureText(k).width + padX*2; });
   var total = widths.reduce(function(a,b){ return a+b; }, 0) + gap*(kw.length-1);
@@ -768,7 +760,6 @@ function buildPoster(r){
     x += widths[i] + gap;
   });
 
-  // 判词卡片
   var boxW = W-200, boxX = 100, boxY = 720;
   ctx.fillStyle = "rgba(0,0,0,.16)";
   roundRect(ctx, boxX, boxY, boxW, 480, 26);
@@ -779,10 +770,9 @@ function buildPoster(r){
   var lh = 66, sy = boxY + 240 - (lines.length-1)*lh/2;
   lines.forEach(function(ln, i){ ctx.fillText(ln, W/2, sy + i*lh); });
 
-  // 底部
   ctx.fillStyle = "rgba(255,255,255,.78)";
   ctx.font = "30px " + FONT;
-  ctx.fillText("未来你变成嫂子 · 你和你担的 CP 日常", W/2, H-80);
+  ctx.fillText("未来你变成嫂子 · 你俩的肌肤饥渴", W/2, H-80);
 
   return c;
 }
@@ -799,10 +789,10 @@ function saveOrShare(){
     btn.textContent = "💾 保存 / 分享结果海报";
     btn.style.opacity = 1;
     if (!blob){ toast("生成失败，请截图保存"); return; }
-    var file = new File([blob], "CP日常_" + r.name + ".png", { type: "image/png" });
+    var file = new File([blob], "肌肤饥渴_" + r.name + ".png", { type: "image/png" });
     var nav = navigator;
     if (nav.canShare && nav.canShare({ files: [file] })){
-      nav.share({ files: [file], title: "测测你和你担的CP日常" })
+      nav.share({ files: [file], title: "测测你和你担的肌肤饥渴" })
         .catch(function(){ downloadBlob(blob, file.name); });
     } else {
       downloadBlob(blob, file.name);
