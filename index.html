@@ -294,9 +294,9 @@
       <div class="hero">
         <div class="kicker">— 未来成为嫂子 —</div>
         <h1>你和你担，会是哪种<br><span class="hl">情侣相处模式</span></h1>
-        <div class="emoji-row">🐱 🐨 🐺 🦔</div>
+        <div class="emoji-row">💕 💞 💘 💫</div>
         <div class="divider"><span class="heart">💗</span></div>
-        <p class="sub">六道题，代入那个和他在一起的人<br>看看你俩黏的是荷尔蒙、体温、主权，还是疼痛</p>
+        <p class="sub">六道题，代入那个和他在一起的人<br>看看你俩之间，会是什么样子</p>
         <button class="btn" id="btn-start">开始测试</button>
         <div class="tips">纯属娱乐 · 别太当真（嗑到了就行）</div>
       </div>
@@ -317,24 +317,24 @@
     <!-- 结果页 -->
     <div class="card hidden" id="screen-result">
       <div class="result">
-        <div class="r-kicker" id="r-kicker">你的肌肤饥渴型</div>
+        <div class="r-kicker" id="r-kicker">你的情侣相处模式</div>
         <div class="r-name" id="r-name"></div>
         <div class="r-tag" id="r-tag"></div>
         <div class="poster" id="poster"></div>
 
         <div class="r-detail">
-          <div class="k">— 你们的黏法详说 —</div>
+          <div class="k">— 相处模式详说 —</div>
           <div class="t" id="r-detail"></div>
         </div>
 
         <div class="review">
-          <div class="k">— 你的肌肤饥渴取向分析 —</div>
+          <div class="k">— 你的选择轨迹 —</div>
           <div class="rv-synth" id="rv-synth"></div>
           <div class="review-list" id="review-list"></div>
         </div>
 
         <div class="others">
-          <div class="k">— 其他肌肤饥渴类型 —</div>
+          <div class="k">— 其他相处模式 —</div>
           <div class="ot-list" id="ot-list"></div>
         </div>
 
@@ -395,23 +395,23 @@ var RESULTS = {
 
 var QUESTIONS = [
   {
-    scene: "先说点现实的——普通人要够着一个大明星，可不像偶像剧里下楼买杯咖啡就能撞见。你俩能搭上话的场合，翻来覆去也就那么几个。",
+    scene: "你俩的初识，不是偶像剧里的偶遇——而是一场普通、甚至有点狼狈的真实碰面。",
     q: "你和他真正的「初识」，最可能是下面哪一种离谱但真实的打开方式？",
     opts: [
       { t: "演唱会内场，他被你举的灯牌逗笑，散场后你挤在出口想拍张照，结果他主动停下来问「你那灯牌上写的什么，再给我看一遍」——你当场心跳过速，话都说不利索。", w: { "zhiqiu": 3 } },
       { t: "机场到达，人潮把你挤到最前面，他戴着口罩从你面前经过时停了一下等助理，你俩就隔着一米，谁也没说话，他的目光在你脸上停了两秒，然后转身走了。", w: { "xineng": 3 } },
-      { t: "线上，你在他的直播里刷屏，他点名念出你的 ID，还把你那条弹幕单独挑出来回，弹幕瞬间炸了，全在猜这个被翻牌的是谁。", w: { "badao": 3 } },
-      { t: "你在他某条深夜微博下写了一段很丧的话，本以为是石沉大海，没想到他私信了你，只问了一句「你还好吗」——你们就从这句「你还好吗」开始认识。", w: { "gongdan": 3 } }
+      { t: "你中了官方的一次抽奖互动，上台领他亲手准备的礼物时，他当众念出你的名字，还补了一句「我记得你，上次那场你也在」——你成了全场最被记住、最被羡慕的那个人。", w: { "badao": 3 } },
+      { t: "你给应援写了一封信，坦白说最难熬的那几年是靠他撑过来的，后来他回你「你的信我认真看了，谢谢你撑到现在」——你们就从这句「谢谢你」开始认识。", w: { "gongdan": 3 } }
     ]
   },
   {
-    scene: "别急着往下点，先「合个盘」——把你俩的星座、属相、年龄差都掏出来对一对，看老天爷给这配置埋了什么伏笔。",
-    q: "回想你俩真实的本命盘，更接近下面哪一挂？",
+    scene: "说到这个人，你心里最软、最戳你的那一点，才是一切的开始。",
+    q: "你最爱你自担的，是下面哪一点？",
     opts: [
-      { t: "「低电量组合」——你俩的星座 / 属相盘里都带点敏感、带点易耗，别人嫌你们想太多，你们却正好能接住彼此最累的那一刻。", w: { "gongdan": 3 } },
-      { t: "「火象撞火象」或「同龄人」——盘子一对就天雷勾地火，认识三天像三年，身体比脑子先来电，连预热都省了。", w: { "zhiqiu": 3 } },
-      { t: "「土象配水象」这种慢热盘——第一眼不惊艳，越处越舒服，像两块温温的石头，贴着贴着就再也分不开了。", w: { "xineng": 3 } },
-      { t: "「年龄差 / 气场差」——一个年上、习惯掌控，一个乐得被稳稳圈着，别人喊你俩「爹系×小狗」，你俩还乐在其中。", w: { "badao": 3 } }
+      { t: "狼系·他的「稳」——天塌下来都面不改色，待在他身边就像进了他的领地，被护得死死的，你根本不用操心。", w: { "badao": 3 } },
+      { t: "猫系·他的「撩」——又野又软，一个眼神就能把你点着，你明知道会栽，还是心甘情愿往上扑。", w: { "zhiqiu": 3 } },
+      { t: "刺猬系·他的「懂」——外表冷、带点刺，可越靠近越发现，他比谁都更懂你疼在哪、累在哪。", w: { "gongdan": 3 } },
+      { t: "考拉系·他的「静」——慢吞吞、情绪稳，抱着就不撒手，你只要挂在他身上，满身焦虑就一点一点散了。", w: { "xineng": 3 } }
     ]
   },
   {
@@ -435,8 +435,8 @@ var QUESTIONS = [
     ]
   },
   {
-    scene: "难得的休息日，你们宅在家，谁也不想出门。",
-    q: "最常出现的画面是？",
+    scene: "",
+    q: "难得的休息日，你们宅在家谁也不想出门——最常出现的画面是哪种？",
     opts: [
       { t: "你生理期 / 头痛，他把你按回床上，掌心贴住你小腹 / 太阳穴物理止痛，还一边嘴上嫌弃「让你别喝冰的你非不听」。", w: { "gongdan": 3 } },
       { t: "一个看剧一个打游戏，各歪沙发一头，脚在中间交叉，偶尔把屏幕歪过去给对方看一眼，笑一下，继续各干各的。", w: { "xineng": 3 } },
@@ -508,7 +508,9 @@ function renderQuestion(){
   var q = QUESTIONS[cur];
   $("q-num").textContent = (cur+1) + " / " + QUESTIONS.length;
   $("progress-bar").style.width = ((cur+1)/QUESTIONS.length*100) + "%";
-  $("q-scene").innerHTML = '📌 <b>场景</b>　' + q.scene;
+  var sceneBox = $("q-scene");
+  if (q.scene){ sceneBox.style.display = ""; sceneBox.innerHTML = '📌 <b>场景</b>　' + q.scene; }
+  else { sceneBox.style.display = "none"; }
   $("q-title").innerHTML = '<span class="q-no">' + (cur+1) + '.</span>' + q.q;
   var box = $("q-opts");
   box.innerHTML = "";
@@ -574,7 +576,7 @@ function renderPosterHTML(r){
     '<div class="p-line"></div>' +
     '<div class="p-kw">' + kwHtml + '</div>' +
     '<div class="p-text">' + r.text + '</div>' +
-    '<div class="p-foot">未来你变成嫂子 · 你俩的肌肤饥渴</div>';
+    '<div class="p-foot">未来成为嫂子 · 你和你担的相处模式</div>';
 }
 
 /* ============ 肌肤饥渴取向分析 + 回顾 ============ */
@@ -598,11 +600,11 @@ function renderReview(){
 
   var body;
   if (RESULTS[top] === currentResult){
-    body = '你的「肌肤饥渴」取向很一致——6 道题里大多都指向「' + myName + '」这一挂，从初识到相处黏得很彻底，不是随便测出来的。';
+    body = '你的选择很一致——6 道题里大多都指向「' + myName + '」这一挂，从初识到相处，一路都很顺。';
   } else {
-    body = '你的选择有散有聚，但总体上最贴近「' + topName + '」，最后却收束成了「' + myName + '」——说明你在「黏」这件事上，藏着自己都未必察觉的一面。';
+    body = '你的选择有散有聚，但总体上最贴近「' + topName + '」，最后却落成了「' + myName + '」——你心里想要的，和你实际会处的，未必完全一样。';
   }
-  synth.innerHTML = '<b>【肌肤饥渴取向】</b>' + body;
+  synth.innerHTML = '<b>【你的相处模式】</b>' + body;
 
   answers.forEach(function(a, i){
     if (!a) return;
@@ -752,7 +754,7 @@ function buildPoster(r){
 
   ctx.fillStyle = "rgba(255,255,255,.78)";
   ctx.font = "30px " + FONT;
-  ctx.fillText("未来你变成嫂子 · 你俩的肌肤饥渴", W/2, H-80);
+  ctx.fillText("未来成为嫂子 · 你和你担的相处模式", W/2, H-80);
 
   return c;
 }
@@ -769,7 +771,7 @@ function saveOrShare(){
     btn.textContent = "💾 保存 / 分享结果海报";
     btn.style.opacity = 1;
     if (!blob){ toast("生成失败，请截图保存"); return; }
-    var file = new File([blob], "肌肤饥渴_" + r.name + ".png", { type: "image/png" });
+    var file = new File([blob], "相处模式_" + r.name + ".png", { type: "image/png" });
     var nav = navigator;
     if (nav.canShare && nav.canShare({ files: [file] })){
       nav.share({ files: [file], title: "未来成为嫂子 · 你和你担的情侣相处模式" })
